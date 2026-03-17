@@ -1,0 +1,57 @@
+body{
+    height: 800px;
+}
+
+#grassyPatch{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    background-image: url(assignment03_images/images/environment_forestbackground.png);
+    background-size: cover;
+}
+
+
+#info{
+    padding-left: 530px;
+}
+
+#grasses{
+    position:absolute;
+    top: 240px;
+}
+
+#grasses img{
+    height: 160px;
+    width:160px;   
+}
+
+#grass1{
+    position:absolute;
+    left: 5px;
+}
+#grass2{
+    position:absolute;
+    left:175px;
+}
+#grass3{
+    position:absolute;
+    left:340px
+}
+
+#grasses img:hover{
+    background-color: rgba(108, 235, 129, 0.5);
+}
+
+#previousResults{
+    position:absolute;
+    top: 400px;
+    height: 400px;
+
+}
+
+#entries{
+    position: absolute;
+    width: 200px;
+    top: 440px;
+    
+}
