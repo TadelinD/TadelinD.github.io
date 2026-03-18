@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal To-Do</title>
+    <link rel = "stylesheet" href = "macro5.css">
+</head>
+<body>
+    <h1 id = "title">Seasonal To-Do List</h1>
+    
+    <select id="filter">
+        <option value="all">Show All Seasons</option>
+        <option value="winter">Winter</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+        <option value = "completed">Completed</option>
+        <option value = "uncompleted">Uncompleted</option>
+
+    </select>
+    <div id="panel_add_new_item" class="panel hidden">
+        <h2>Add New Item</h2>
+        <div id = "notCompleted" class = "hidden">Please Completely Fill out Form</div>
+        <form>
+            
+                <label for="item_title">Title</label><br>
+                <input type="text" id="item_title" required/>
+            
+            <br>
+            <div>
+                <label for="item_season">Category</label><br>
+                <select id="item_season" required>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="item_description">Description</label><br>
+                <textarea id="item_description" required></textarea>
+            </div>
+            <br>
+            
+            <button id="item_add">Add</button>
+            <button id="item_cancel">Cancel</button>
+            
+        </form>
+    </div>
+
+    <div id="panelInfo" class="panel hidden">
+        <h2 id = "titleDisplay">Title</h2>
+        <p id = "seasonDisplay">Season:</p>
+        <p id = "descriptionDisplay">Description</p>
+        <hr>
+        <p id = "createdDisplay">Created:</p>
+        <p id = "lastAccessed">Last Accessed:</p>
+        <button id = "close">Close</button>
+
+    </div>
+
+    <div id="panel_item_container"></div>
+    <img id = "addNew" src = "images/add_button.png">
+    <script src = "macro5.js"></script>
+</body>
+</html>

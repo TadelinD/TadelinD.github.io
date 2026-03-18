@@ -1,0 +1,127 @@
+body{
+    background-image: url(images/corkboard.jpg);
+}
+
+#title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+#addNew{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#addNew:hover{
+    height: 80px;
+    width: 80px;
+}
+
+#filter {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.panel {
+    width: 300px;
+    height: 360px;
+    background-color: #fff;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+.tile {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    z-index: 0;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+.winter{
+    background-color:lightblue;
+}
+
+.summer{
+    background-color:orangered;
+}
+
+.spring{
+    background-color:aquamarine;
+}
+
+.fall{
+    background-color: orange;
+}
+
+#item_season{
+    width: 97%;
+}
+
+#item_description{
+    width: 95%;
+    height: 60px;
+}
+
+#item_title{
+    width: 95%;
+}
+
+.displayTitle{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#close{
+    position: fixed;
+    left: 40%;
+
+}
+
+#notCompleted{
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.didTask{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width: 35px;
+    height:35px;
+}
+
+.deleteDecor{
+    position: absolute;
+    z-index: 10;
+    left: 92%;
+    bottom: 92%;
+    width: 20px;
+    height: 20px;
+}

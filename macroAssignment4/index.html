@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="macro4.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div id = "startScreen">
+        <h1>Memory Matching Madness!</h1>
+        <p>Play a fast-paced game of "memory" and try and beat your best time!</p>
+        <button id="Start">Start!</button>
+        <button id = "easy" class = "difficulty">Easy</button>
+        <button id = "medium" class = "difficulty">Medium</button>
+        <button id = "hard" class = "difficulty">Hard</button>
+    </div>
+
+    <div id = "gameDisplay">
+        <h1>Ready, set, Match!</h1>
+        <p id = "timer">Time: 0</p>
+        <div id = "imagesDisplay"></div>
+    </div>
+
+    <div id = "gameOver">
+        <h1>Game Over!</h1>
+        <p id = "yourTime">Your time:</p>
+        <p id = "bestTime">Best time:</p>
+        <form>
+            <div id = "enterName">
+                High Score! Enter your Name: <input type = "text" id = "fname">
+            </div>
+        </form>
+        <button id = "playAgain">Play Again!</button>
+    </div>
+
+    <audio id = "wrong">
+        <source src = "assignment04_images/wrong.wav" type = "audio/wav"> 
+    </audio>
+
+    <audio id = "correct">
+        <source src = "assignment04_images/correct.wav" type = "audio/wav">
+        
+    </audio>
+
+    <script src = "macro4.js"></script>
+</body>
+</html>

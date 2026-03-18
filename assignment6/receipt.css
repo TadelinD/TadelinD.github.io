@@ -1,0 +1,37 @@
+
+
+@font-face {
+    font-family: Inter;
+    src: url("interFont.ttf");
+}
+
+body{
+    font-family: Inter;
+    background-color: #C6E7FF;
+    align-content: center;
+    padding-bottom: 150px;
+    margin: 0;
+    padding: 20px;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    background-color: white;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+}
+
+p{
+    text-align: end;
+    font-weight: bold;
+}

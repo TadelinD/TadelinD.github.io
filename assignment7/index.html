@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel = "stylesheet" href = "assignment7.css">
+</head>
+<body>
+    <form id = "userInfo" action = "online.php" method = post>
+        <label for = "customerName">Name:</label>
+        <input type="text" id="customerName" name = "customerName"/>
+
+        <label for = "customerEmail">Email:</label>
+        <input type="email" id="customerEmail" name = "customerEmail"/>
+
+        <label for = "product">Product:</label>
+        <select name = "product" id ="product">
+            <option value = "">Select a product</option>
+            <option value = "poster">Poster - $10</option>
+            <option value = "sticker">Sticker - $2</option>
+        </select>
+
+        <label for = "quantity">Quantity Ordered:</label>
+        <input type="number" id="quantity" name = "quantity" value = "0" required/>
+
+        <input type="submit" value="Checkout">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

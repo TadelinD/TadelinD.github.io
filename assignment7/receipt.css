@@ -1,0 +1,16 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #D4EBF8;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    width: calc(100%) - 200px;
+    height: 20px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px rgb(136, 133, 133) solid;
+}

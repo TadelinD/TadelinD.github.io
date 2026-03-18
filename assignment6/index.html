@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel = "stylesheet" href = "assignment6.css">
+</head>
+
+<header class = "centerText">Assignment 6</header>
+<hr>
+<body>
+    <h1 class = "centerText">Buy your products now!</h1>
+    <p class = "centerText">Please choose the number of Plushies you want to buy, then the subtotal and the grand total will be displayed.</p>
+    <p class = "centerText"> Then enter your information and click the checkout to see your receipt.</p>
+
+    <h2 class = "centerText">Kirby Heart Plushie</h2>
+    <div class = "product">
+        <div>
+            <img src = "images/Kirby.jpg">
+        </div>
+        <div class = "infoDisplay">
+            <p class = "priceDisplay">$16.99</p>
+            <form>
+                <label for = "qKirby">Quantity Ordered:</label>
+                <input type="number" id="qKirby" value = "0" required/>
+                <p></p>
+                <label for = "subKirby">Subtotal:</label>
+                <input type="number" id="subKirby" value = "0.00" readonly/>
+            </form>
+        </div>
+    </div>
+
+    <h2 class = "centerText">Penguin Mario Plushie</h2>
+    <div class = "product">
+        <div>
+            <img src = "images/marioPenguin.jfif">
+        </div>
+        <div class = "infoDisplay">
+            <p class = "priceDisplay">$18.99</p>
+            <form>
+                <label for = "qMario">Quantity Ordered:</label>
+                <input type="number" id="qMario" value = "0" required/>
+                <p></p>
+                <label for = "subMario">Subtotal:</label>
+                <input type="number" id="subMario" value = "0.00" readonly/>
+            </form>
+        </div>
+    </div>
+
+    <h2 class = "centerText">Red Yoshi Plushie</h2>
+    <div class = "product">
+        <div>
+            <img src = "images/yoshi.png">
+        </div>
+        <div class = "infoDisplay">
+            <p class = "priceDisplay">$16.99</p>
+            <form>
+                <label for = "qYoshi">Quantity Ordered:</label>
+                <input type="number" id="qYoshi" value = "0" required/>
+                <p></p>
+                <label for = "subYoshi">Subtotal:</label>
+                <input type="number" id="subYoshi" value = "0.00" readonly/>
+            </form>
+        </div>
+    </div>
+
+
+    <p class = "centerText">Enter your Name, Email, Address, Phone Number, Credit Card Type, Credit Crad Number, Expiration Date, and then click checkout below.</p>
+    <form id = "userInfo" action = "#">
+        <label for = "customerName">Name:</label>
+        <input type="text" id="customerName" name = "customerName"/>
+
+        <label for = "customerEmail">Email:</label>
+        <input type="email" id="customerEmail" name = "customerEmail"/>
+
+        <label for = "address">Address:</label>
+        <input type="text" id="address" name = "address"/>
+
+        <label for = "zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name = "zipCode"/>
+
+        <label for = "phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name = "phoneNumber"/>
+
+        <label for = "creditCardNumber">Credit Card Number:</label>
+        <input type="text" id="creditCardNumber" name = "creditCardNumber"/>
+
+        <label>Credit Card Type:</label>
+        <div class="radio-group">
+            <input name="creditCardType" type="radio" value="Amex" checked> AMEX
+            <input name="creditCardType" type="radio" value="Visa"> Visa
+            <input name="creditCardType" type="radio" value="MasterCard"> Master Card
+        </div>
+
+        <label for = "expiration">Expiration Date:</label>
+        <input type="text" id="expiration" name = "expiration"/>
+
+        <label>Shipping:</label>
+        <div class="radio-group" id = "shippingChoice">
+            <input name="shipping" type="radio" value="willCall" id = "willCall"> Will-Call: $5
+            <input name="shipping" type="radio" value="directShip" id = "directShip" checked> Shipping: $7
+        </div>
+
+        <input type="submit" value="Checkout">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div class = "centerText">
+        <form>
+            <label for = "grandTotal" id = "grandTotalLabel">Grand Total:</label>
+            <input type="number" id="grandTotal" value = "7.00" readonly/>
+        </form>
+    </div>
+
+
+    
+    <script src = "asg6cart.js"></script>
+</body>
+</html>

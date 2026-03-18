@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Cloud;
+    src: url("../Fonts/Cloudy\ Bright.otf");
+}
+
+body{
+    font-family: Cloud;
+}
+
+.decor{
+    width: 320px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #E3A5C7;
+    color:#FFDFD6;
+    padding: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#iconWrap{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #B692C2;
+    height: 1500px;
+    padding: 10px;
+    padding-top: 50px;
+    box-sizing: border-box;
+
+}
+
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    height:110px;
+    width:320px;
+}
+
+.iconImg{
+    padding-left: 5px;
+    padding-right: 5px;
+    height:85px;
+    width:85px;
+}
+
+.iconText{
+    text-align: center;
+    color:#FFDFD6;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+a:hover{
+    background-color: #9384D1;
+}

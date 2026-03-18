@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Inter;
+    src: url("interFont.ttf");
+}
+
+header{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+body{
+    font-family: Inter;
+    background-color: #C6E7FF;
+    align-content: center;
+    padding-bottom: 150px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: black;
+}
+
+form input[type="text"],
+        form input[type="number"],
+        form input[type="email"],
+        form select {
+            width: calc(100% - 200px);
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-left: 100px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            
+        }
+
+        form input[type="radio"] {
+
+            margin-right: 8px;
+        }
+
+        form .radio-group {
+            margin-left: 100px;
+            margin-bottom: 15px;
+        }
+
+        form input[type="submit"] {
+            position: relative;
+            right: -100px;
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        form input[type="reset"] {
+            position: relative;
+            right: -100px;
+            background-color: #e63333;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+
+.centerText{
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.priceDisplay{
+    position: relative;
+    right: -100px;
+    font-weight: bold;
+}
+
+#grandTotal{
+    width: 115px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+    left: 180px;
+    top: -70px;
+}
+
+#grandTotalLabel{
+    position: relative;
+    left: 160px;
+    top: -70px;
+}

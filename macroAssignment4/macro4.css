@@ -1,0 +1,71 @@
+@font-face{
+    font-family: pixel;
+    src: url("dogica.ttf");
+}
+
+body{
+    font-family: pixel;
+    background-color: black;
+    color:white;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#Start{
+    font-family: pixel;
+    border: none;
+    height: 40px;
+    width: 90px;
+}
+
+#playAgain{
+    font-family: pixel;
+    border: none;
+    height: 50px;
+    width: 250px;
+}
+
+
+#gameDisplay{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagesDisplay{
+    width: 320px;
+}
+
+#gameOver{
+    display:none;
+}
+
+
+.pokeball{
+    width: 80px;
+    height: 80px;
+}
+
+.difficulty{
+    font-family: pixel;
+    border: none;
+    height: 40px;
+    width: 90px;
+    display:none;
+}
+
+#enterName{
+    font-family: pixel;
+    border: none;
+    height: 40px;
+    width: 90px;
+    display: none;
+}
+
+
+.uncovered{
+    
+}
+
